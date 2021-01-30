@@ -7,7 +7,7 @@
 body {
 
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(245, 245, 245);
     line-height: 1.5;
   }
  
@@ -53,4 +53,30 @@ header nav ul li {
     background-image: url("../images/hero.jpg") ;
     height: 300px;
     background-size: cover;
+}
+
+/* end of hero img */
+
+/*style sections heads*/
+.section {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+
+  }
+
+.section h2 {
+    font-weight: normal;
+    color: rgb(32, 32, 32);
+    text-align: right;
+    padding: 40px;
+    border-right: 5px solid rgb(32, 32, 32);
+    font-size: 4vw;
+    line-height: 1;
+    width: 20%;
+}
+
+.section p {
+    margin: 20px;
+    text-align: left;
 }
