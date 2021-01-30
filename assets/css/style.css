@@ -59,9 +59,14 @@ header nav ul li {
 
 /*style sections heads*/
 .section {
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 
   }
 
@@ -76,7 +81,12 @@ header nav ul li {
     width: 20%;
 }
 
+.section div {
+    flex: 0 0 75%;
+}
+
 .section p {
     margin: 20px;
-    text-align: left;
+    font-size: 1.8vw;
+    color: rgb(32, 32, 32);
 }
