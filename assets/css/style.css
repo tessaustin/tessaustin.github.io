@@ -45,7 +45,7 @@ header nav a {
     color: var(--secondary);
     margin: 10px 20px;
     padding: 10px 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     background-image: linear-gradient(var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2vw;
