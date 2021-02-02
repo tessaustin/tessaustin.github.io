@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary: rgba(32, 32, 32,1);
+    --secondary: rgba(94, 226, 204,1);
+    --behind: rgba(245, 245, 245, 1);
+}
 
 body {
 
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--behind);
     line-height: 1.5;
   }
  
@@ -15,13 +20,13 @@ body {
 
 header {
     padding: 20px 0;
-    background-color: rgb(32, 32, 32);
+    background-color: var(--primary);
 }
 
 header h1 {
     font-weight: normal;
-    color: rgb(32, 32, 32);
-    background-color: rgb(94, 226, 204);
+    color: var(--primary);
+    background-color: var(--secondary);
     padding: 0 5px 0 80px;
     margin: 0;
     font-size: 6vw;
@@ -32,7 +37,7 @@ header h1 {
 header a {
     font-weight: normal;
     text-decoration: none;
-    color: rgb(94, 226, 204);
+    color: var(--secondary);
     margin: 0 15px;
     font-size: 2vw;
 }
@@ -71,11 +76,12 @@ header nav ul li {
   }
 
 .section h2 {
+    flex: 0 0 20%;
     font-weight: normal;
-    color: rgb(32, 32, 32);
+    color: var(--primary);
     text-align: right;
     padding: 40px;
-    border-right: 5px solid rgb(32, 32, 32);
+    border-right: 5px solid var(--primary);
     font-size: 4vw;
     line-height: 1;
     width: 20%;
@@ -88,5 +94,60 @@ header nav ul li {
 .section p {
     margin: 20px;
     font-size: 1.8vw;
-    color: rgb(32, 32, 32);
+    color: var(--primary);
 }
+
+/*end of style sections heads*/
+
+/*work section*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 5px solid var(--secondary);
+    color: var(--primary);
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 30px 0;
+    margin: 10px;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 2vw;
+}
+
+.flex-item:first-child {
+    min-height: 250px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.flex-item div {
+    background-color: var(--secondary);
+    padding: 0 0 0 2px;
+}
+
+.run-buddy {
+    background-image: url("../images/run.png");
+}
+
+.horiseon {
+    background-image: url("../images/horiseon.jpg");
+}
+
+.placeholder {
+    background-image: url("../images/placeholder.png");
+}
+
+/*end of work section*/
+
