@@ -157,16 +157,16 @@ header a:hover {
     padding: 0 0 0 2px;
 }
 
-.run-buddy {
-    background-image: url("../images/run.jpg");
+.pet-adoption-quiz {
+    background-image: url("../images/petadopt.png");
 }
 
 .horiseon {
     background-image: url("../images/horiseon.jpg");
 }
 
-.taskinator {
-    background-image: url("../images/taskinator.png");
+.run-buddy {
+    background-image: url("../images/run.jpg");
 }
 
 /*end of work section*/
